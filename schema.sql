@@ -25,6 +25,22 @@ CREATE TABLE Issues(
     created DATETIME,
     updated DATETIME,
     PRIMARY KEY(id),
-
-
 );
+INSERT INTO Users(firstname,email,password,date_joined) VALUES ('admin','admin@project2.com','password123',CURRENT_TIMESTAMP);
+
+
+/*
+QUERIES 
+
+input new user into users table.
+INSERT INTO Users(firstname,lastname,password,email,date_joined) VALUES(,CURRENT_TIMESTAMP);
+
+query to get all the issues
+SELECT Issues.id,title,type,status,Users.firstname,Users.lastname,created FROM Issues INNER JOIN Users ON Issues.assigned_to=Users.id;
+
+query to input/create a new issue in the Issues table
+INSERT INTO Issues(title,description,type,priority,status,assigned_to,created_by,created,updated) VALUES(,CURRENT_TIMESTAMP);
+
+query to get the detals of an issue
+SELECT * FROM Issues WHERE id= ;
+*/
