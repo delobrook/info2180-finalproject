@@ -4,7 +4,7 @@ USE finalproject;
 
 DROP TABLE IF EXISTS Users;
 CREATE TABLE Users(
-    id INT(8) NOT NULL AUTO_INCREMENT,
+    id INT(25) NOT NULL AUTO_INCREMENT,
     firstname VARCHAR(50),
     lastname VARCHAR(50),
     password VARCHAR(50),
@@ -14,7 +14,7 @@ CREATE TABLE Users(
 );
 DROP TABLE IF EXISTS Issues;
 CREATE TABLE Issues(
-    id INT(8) NOT NULL AUTO_INCREMENT ,
+    id INT(25) NOT NULL AUTO_INCREMENT ,
     title VARCHAR(50),
     description TEXT,
     type VARCHAR(50),
@@ -25,6 +25,6 @@ CREATE TABLE Issues(
     created DATETIME,
     updated DATETIME,
     PRIMARY KEY(id),
-    
+
 
 );
