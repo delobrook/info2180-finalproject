@@ -36,13 +36,29 @@ li{
 /* ----------------------------------------------- */
 .container{
     display: grid;
-    grid-template-columns: 10% 90%;
+    grid-template-columns: 10% 90;
 }
 
 .body_message{
     grid-row: 1/ 3;
 }
+.XSS{
+    grid-row: 1/3;
+}
+.sidemsg{
+    grid-row: 2/3;
+    background-color: lightgray;
+    border-width: 2px;
+    border-style: solid;
+    border-color: black;
+    padding: auto;
+    margin: auto;
+}
 
+.choices {
+    display: flex;
+    align-items: center;
+}
 .newUserSection {
     padding-left: 3%;
     padding-top: 2em;
@@ -105,4 +121,16 @@ input[type=submit]{
     color: azure;
     background-color: #2350d0;
 
+}
+#markClosed{
+    color: white;
+    background-color: #3251a8;
+    margin: auto;
+}
+
+#markInProgress{
+    color: white;
+    background-color: #32a852;
+    margin: auto;
+    float: right;
 }
