@@ -1,7 +1,14 @@
 body {
-    margin: 0;
+    display: grid;
+    grid-template-areas:
+      'header header header'
+      'menu subheader subheader'
+      'menu main side'
+      'menu main buttons';
+    grid-template-rows: auto auto 250px 200px;
+    background-color:white;
     padding: 0;
-
+    margin: 0;
   }
 
 
@@ -27,38 +34,35 @@ ul{
     
 }
 li{
-    padding-bottom: 10%;
+    padding-bottom: 20%;
+}
+article{
+    position: static;
 }
 
+form{
+    grid-area: buttons;   
+    display: flex;
+    flex-direction: column;
+    position: static;
+}
 
 /* ----------------------------------------------- */
 /* Grid Box */
 /* ----------------------------------------------- */
-.container{
-    display: grid;
-    grid-template-columns: 10% 90;
+
+.wrapper{
+    grid-area: header;
 }
 
 .body_message{
-    grid-row: 1/ 3;
-}
-.XSS{
-    grid-row: 1/3;
-}
-.sidemsg{
-    grid-row: 2/3;
+    grid-area: menu;
     background-color: lightgray;
-    border-width: 2px;
-    border-style: solid;
-    border-color: black;
-    padding: auto;
-    margin: auto;
+    width: 150px;
+    height: 100%;
 }
 
-.choices {
-    display: flex;
-    align-items: center;
-}
+
 .newUserSection {
     padding-left: 3%;
     padding-top: 2em;
@@ -98,10 +102,6 @@ img{
 /* Colour */
 /* ----------------------------------------------- */
 
-.body_message {
-    background-color: lightgray;
-}
-
 input{
     border: 1px solid #29465b;  
 }
@@ -122,15 +122,88 @@ input[type=submit]{
     background-color: #2350d0;
 
 }
+
+.Filter{
+    grid-area: subheader;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.Filter h4{
+    display: block;
+    text-align: center;
+    padding: 16px;
+    font-size: 20px;
+    float: left;
+}
+
+.Filter h5{
+    display: block;
+    text-align: center;
+    padding: 16px;
+    font-size: 20px;
+    float: left;
+}
+
+.Filter h5:hover{
+background-color: #3251a8 ;
+color: white;}
+
+.tableinfo{
+    grid-area: main;
+}
+
 #markClosed{
     color: white;
     background-color: #3251a8;
-    margin: auto;
+    margin: 5px;
+    height: 50px;
+    width: 130px; 
 }
 
 #markInProgress{
     color: white;
     background-color: #32a852;
-    margin: auto;
-    float: right;
+    margin: 5px;
+    height: 50px;
+    width: 130px;
+}
+
+#CreateNewIssue{
+    color: white;
+    grid-area: subheader;
+    background-color: #32a852;
+    margin: 20px;
+}
+
+th{
+    background-color: lightgray;
+}
+
+td{
+    border-bottom-color: lightgray;
+    border-bottom-width: 2px;
+    border-bottom-style: solid;
+    padding: 4px;
+}
+
+.article_header{
+    grid-area: subheader;
+    font-size: 25px;
+    padding: 10px;
+}
+.article_text{
+    grid-area: main;
+    padding: 10px;
+}
+
+.side_info {
+    background-color: lightgray;
+    grid-area: side;
+    border-width: 5px;
+    border-color: darkgray;
+    border-style: solid;
+    padding: 5px;
+    font-size: 11px ;
 }
