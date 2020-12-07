@@ -1,0 +1,66 @@
+* {
+    margin: 0;
+    padding: 0;
+
+  }
+
+
+  /* ----------------------------------------------- */
+/* BASIC SETUP */
+/* ----------------------------------------------- */
+
+nav {
+    display: flex;
+    flex-direction: row;
+    padding: 2em;
+    background-color: black;
+    color: whitesmoke;
+  }
+ 
+html {
+    font-family: SegoeUI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif;
+}
+
+ul{
+    list-style-type: none;
+    text-align: left;
+    
+}
+li{
+    padding-bottom: 10%;
+}
+
+/* ----------------------------------------------- */
+/* Grid Box */
+/* ----------------------------------------------- */
+.container{
+    display: grid;
+    grid-template-columns: 10% 90%;
+}
+
+.body_message{
+    grid-row: 1/ 3;
+}
+
+
+
+  /* ----------------------------------------------- */
+/* Images */
+/* ----------------------------------------------- */
+
+img{
+    float: left;
+    width: 20px;
+    height: 20px;
+}
+
+
+  /* ----------------------------------------------- */
+/* Colour */
+/* ----------------------------------------------- */
+
+.body_message {
+    background-color: lightgray;
+}
+
+

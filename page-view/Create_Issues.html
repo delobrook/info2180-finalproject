@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>BugMe Issue Tracker</title>
+            <link rel="stylesheet" href="styles.css">
+        </head>
+        <body>
+            
+                <div class="wrapper">
+                    <header>
+                        <nav>
+                            <img id="main_image" src="BugMe.png" alt="BugMe Tracker">
+                            <h1> BugMe Issue Tracker</h1> 
+                        </nav>
+                    </header>
+                </div>
+        <div class="container">
+            <div class= "body_message">
+                    <aside>
+                        <ul>
+                            <div class="Home">
+                            <img id="home_img" src="house.png" alt="House image">
+                            <li>Home</li>
+                            </div>
+
+                            <img id="addUser_img" src="AddUser.png" alt="Add User image">
+                            <li>Add User</li>
+
+                            <img id="NewIssue_img" src="plus.png" alt="New Issue image">
+                            <li>New Issue</li>
+
+                            <img id="logout_img" src="logout.png" alt="Logout image">
+                            <li>Logout</li>
+                        </ul>
+                    </aside>
+            </div>
+            <div class="newUserSection">
+                <h1>Create Issue</h1>
+                <p>
+                    <form action="/action_page.php">
+                    <div class="textfields">    
+                        <h4>Title</h4>
+                        <input type="text" id="fname" name="fname"><br><br>
+
+                        <h4>Description</h4>
+                        <input type="text" id="lname" name="lname"><br><br>
+
+                        <h4>Assigned To</h4>
+                        <select type="text" id="pword" placeholder="Marcia Brady" name="pword"><br><br>
+
+                        <h4>Type</h4>
+                        <select type="text" id="email" placeholder="Bug" name="email"><br><br>
+
+                        <h4>Priority</h4>
+                        <select type="text" id="priority" placeholder="Major" name="priority"><br><br>
+                        
+                        <input type="submit"  form="form1" value="Submit">
+                        
+                    </div>
+
+                </form>
+
+                </p>
+            </div>
+    </div>
+        </body>
+    </html>

@@ -1,0 +1,35 @@
+
+#add_user{
+    padding-left: 200px;
+    margin-top: 30px;
+}
+
+#add_user > * { 
+    display: block;
+}
+
+#add_user h1{
+    margin-bottom: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#submit-new-user-btn{
+    padding: 10px;
+    border-radius: 5px;
+    width: 100px;
+    border: none;
+    color: white;
+    background-color: blue;
+}
+
+#add_user input{
+    padding: 10px;
+    border-radius: 5px;
+    width: 500px;
+    font-size: medium;
+    margin-bottom: 30px;
+}
+
+#add_user label{
+    margin-bottom: 15px;
+}

@@ -1,0 +1,39 @@
+#new_issue{
+    padding-left: 200px;
+    margin-top: 15px;
+}
+
+#new_issue > * { 
+    display: block;
+}
+
+#new_issue label{
+    margin-bottom: 5px;
+}
+
+#new_issue h1{
+    margin-bottom: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#new_issue textarea{
+    height: 100px;
+}
+
+#new_issue input, #new_issue select, #new_issue textarea{
+    padding: 10px;
+    border-radius: 5px;
+    width: 500px;
+    font-size: medium;
+    margin-bottom: 15px;
+    border: 1px solid;
+}
+
+#submit-issue-btn{
+    padding: 10px;
+    border-radius: 5px;
+    width: 100px;
+    border: none;
+    color: white;
+    background-color: blue;
+}

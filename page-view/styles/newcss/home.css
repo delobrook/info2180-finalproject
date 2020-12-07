@@ -1,0 +1,65 @@
+#home{
+    padding: 50px;
+}
+#home h2{
+    font-size: 40px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#create-issue-btn{
+    margin-left: 70%;
+    background-color: green;
+    border-radius: 6px;
+    border: none;
+    padding: 10px;
+}
+
+#create-issue-btn, .home-btn:hover{
+    cursor: pointer;
+}
+
+#home-header{
+    margin-bottom: 40px;
+}
+.home-btn, #home-header label{
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+}
+.home-btn{
+    margin-left: 30px;
+    border: none;
+    background-color: white;
+    padding: 20px;
+}
+
+.home-btn:hover, .home-btn:focus{
+    background-color: blue;
+    border-radius: 6px;
+    color: white;
+}
+
+table{
+    border: none;
+    border-collapse: collapse;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+th, td{
+    border: 1px solid black;
+    padding: 5px;
+    min-width: 200px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+tr > th, tbody tr:nth-child(even){
+    background-color: white;
+}
+
+tbody tr:hover{
+    background-color: gray;
+    color: white;
+    cursor: pointer;
+}
+
+

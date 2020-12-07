@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>BugMe Issue Tracker</title>
+            <link rel="stylesheet" href="styles.css">
+        </head>
+        <body>
+            <div class="wrapper">
+                <header>
+                    <nav>
+                        <img id="main_image" scr="BugMe.png" alt="BugMeTracker">
+                        <h1>BugMeTracker</h1> 
+                    </nav>
+                </header>
+            </div>
+    <div class="container">    
+        <div class= "body_message">
+            <main class="section_break">
+                <article>
+                    <ul>
+                        <img id="home_img" scr="house.png" alt="House image"><li>Home</li>
+                        <img id="addUser_img" scr="AddUser.png" alt="Add User image"><li>Add User</li>
+                        <img id="NewIssue_img" scr="plus.png" alt="New Issue image"><li>New Issue</li>
+                        <img id="logout_img" scr="logout.png" alt="Logout image"><li>Logout</li>
+                    </ul>
+                </article>
+            </main>
+        </div>
+        <div class="XSS">
+        <article>
+            <h1>XSS Vulnerability in Add User Form</h1>
+            <h4>Issue #100</h4>
+
+            <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. In ipsum labore dolorum nostrum, explicabo mollitia sunt animi totam excepturi repudiandae similique incidunt voluptatibus suscipit. Sed exercitationem ipsum dolore dicta quis.
+            </p>
+
+            <p>> Issue created on November 1, 2019 at 4:30PM by Marsha Brady</p>
+            <p>> Last updated on November 8, 2019 at 10:00AM</p>
+        </article>
+        </div> 
+        <div class="sidemsg">
+            <aside>
+                <h4>Assigned To</h4>
+                <h5>Tom Brady</h4>
+            </aside>
+            <aside>
+                <h4>Type:</h4>
+                <h5>Proposal</h4>
+            </aside>
+            <aside>
+                <h4>Priority:</h4>
+                <h5>Major</h4>
+            </aside>
+            <aside>
+                <h4>Status</h4>
+                <h5>Open</h4>
+            </aside>
+        </div>
+        <div class="choices">
+        <button id="markClosed" type="button">Mark as Closed</button>
+        <button id="markInProgress" type="button">Mark In Porgress</button>
+    </div> 
+        </div>
+        </body>
+    </html>
